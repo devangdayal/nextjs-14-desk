@@ -1,4 +1,4 @@
-# Next.js 14 Learning Project <img src="https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000" alt="Next.js 14 Banner" style="width: 100px; height: 100px; vertical-align: middle;"/> 
+# <img src="https://img.icons8.com/?size=100&id=yUdJlcKanVbh&format=png&color=000000" alt="Next.js 14 Banner" style="width: 50px; height: 50px; vertical-align: middle;"/> Next.js 14 Learning Project 
 
 **Embarking on a Journey with Next.js 14**
 
