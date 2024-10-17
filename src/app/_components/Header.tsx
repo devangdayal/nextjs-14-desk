@@ -5,9 +5,10 @@ import { MdSunny } from "react-icons/md";
 interface HeaderProps {
   theme: string;
   toggleTheme: () => void;
+  nextJsInfo: ()=> void;
 }
 
-export default function Header({ theme, toggleTheme }: Readonly<HeaderProps>) {
+export default function Header({ theme, toggleTheme, nextJsInfo}: Readonly<HeaderProps>) {
   return (
     <header>
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 dark:text-blue-800">
@@ -56,6 +57,22 @@ export default function Header({ theme, toggleTheme }: Readonly<HeaderProps>) {
                   <span>
                     {" "}
                     Toggle to {theme === "dark" ? "light" : "dark"} mode
+                  </span>
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={nextJsInfo}
+                  className={`flex flex-row items-center justify-center space-x-2  ${
+                    theme === "dark"
+                      ? "bg-amber-300 text-black"
+                      : "bg-blue-800 text-white"
+                  } rounded-lg px-4 py-2`}
+                >
+                  <MdSunny />
+                  <span>
+                    {" "}
+                    NextJs Information
                   </span>
                 </button>
               </li>
