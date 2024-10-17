@@ -3,9 +3,9 @@ import React from "react";
 
 export default function DocumentCatchAll({
   params,
-}: {
+}: Readonly<{
   params: { [key: string]: string };
-}) {
+}>) {
   return (
     <Card title={"Document Page"} text={"This is the Catch ALL Segment Page"}>
       <div className="text-lime-700 text-">

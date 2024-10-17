@@ -4,12 +4,12 @@ import React from "react";
 
 export default function FolderReviewPage({
   params,
-}: {
-  params: {
-    folderId: String;
-    reviewId: String;
-  };
-}) {
+}: Readonly<{
+  params: Readonly<{
+    folderId: string;
+    reviewId: string;
+  }>;
+}>) {
   const { folderId, reviewId } = params;
 
   const folderIdNum = Number(folderId);

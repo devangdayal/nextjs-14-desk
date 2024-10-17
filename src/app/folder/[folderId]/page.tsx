@@ -4,9 +4,9 @@ import React from "react";
 
 export default function FolderPage({
   params,
-}: {
-  params: { folderId: String };
-}) {
+}: Readonly<{
+  params: { folderId: string };
+}>) {
   const { folderId } = params;
 
   const folderIdNum = Number(folderId);
